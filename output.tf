@@ -109,3 +109,10 @@ output "private_subnet_us_east_1f_id" {
 }
 
 # inf_07_route53.tf
+output "dns_private_zone_id" {
+  value = aws_route53_zone.dns_private_zone.zone_id
+}
+
+output "dns_reverse_zone_id" {
+  value = aws_route53_zone.dns_reverse_zone.zone_id
+}
